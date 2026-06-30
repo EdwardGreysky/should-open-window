@@ -1,0 +1,2 @@
+[core]
+    sshCommand = ssh -i C:\Users\thoma\.ssh\EdwardGreysky -F /dev/null
