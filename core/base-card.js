@@ -219,8 +219,8 @@ export class OpenWindowBase extends HTMLElement {
 
     if (adjustedShouldOpen !== undefined) {
       this._setAdjustedResult(
-        `${adjustedShouldOpen ? '✅ Open' : '🪟 Closed'} ` +
-          `(trend: ${trendWeight > 0 ? '↗ rising' : trendWeight < 0 ? '↘ falling' : '→ stable'})`
+        `In the 3 next hours you should: ${adjustedShouldOpen ? '✅ Open' : '🪟 Close'} ` +
+          `(trend: ${trendWeight > 0 ? '↗ Temperature is rising' : trendWeight < 0 ? '↘ Temperature is falling' : '→ Temperature is stable'})`
       );
     }
   }
