@@ -196,6 +196,10 @@ export class OpenWindowBase extends HTMLElement {
       return;
     }
 
+    if (!rh || rh == 0) {
+      rh = this._tOut;
+    }
+
     const trendWeight = this._trendWeight || 0;
 
     const [shouldOpen, adjustedShouldOpen] = decideShouldOpen(
