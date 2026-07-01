@@ -182,7 +182,7 @@ export class OpenWindowBase extends HTMLElement {
     this._setAdjustedResult('');
 
     const t = Number(this.shadowRoot.getElementById('tempInput').value);
-    const rh = Number(this.shadowRoot.getElementById('humInput').value);
+    let rh = Number(this.shadowRoot.getElementById('humInput').value);
     const mode = this.shadowRoot.querySelector(
       'input[name="mode"]:checked'
     ).value;
@@ -197,7 +197,7 @@ export class OpenWindowBase extends HTMLElement {
     }
 
     if (!rh || rh == 0) {
-      rh = this._tOut;
+      rh = this._humOut;
     }
 
     const trendWeight = this._trendWeight || 0;
