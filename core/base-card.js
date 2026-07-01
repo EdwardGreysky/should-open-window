@@ -243,10 +243,11 @@ export class OpenWindowBase extends HTMLElement {
         label: '100% RH (Saturation)',
         data: saturationCurve(-5, 40),
         type: 'line',
-        borderColor: 'rgba(100,100,200,0.8)',
+        borderColor: '#8F9193cc',
         borderWidth: 2,
         pointRadius: 0,
-        fill: false,
+        fill: 'end',
+        backgroundColor: '#8F91934d',
       },
       ...(mode === 'CoolDown'
         ? [
